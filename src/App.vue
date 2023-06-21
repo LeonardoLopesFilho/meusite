@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-black flex justify-center items-center h-screen">
-    <div class="bg-div rounded-md">
-      <div class="text-orange"> Informations</div>
+  <div class="bg-gray-950 flex justify-center items-center h-screen ">
+    <div class="flex flex-row bg-div-p rounded-md ">
+      <div>
+        <NomeFoto/>
+        <DadosLeo/>
+      </div>
       <div class="text-orange"> Resume</div>
     </div>
   </div>
@@ -9,24 +12,33 @@
 
 
 <script>
-
+import NomeFoto from './components/NomeFoto.vue'
+import DadosLeo from './components/DadosLeo.vue'
 
 export default {
   name: 'App',
   components: {
-    
+    NomeFoto,
+    DadosLeo
   }
 }
 </script>
 
 <style>
-.bg-black {
-  background-color: #191923;
+.bg-fundo {
+  background-color: #313E50;
 }
 .text-orange {
   color: #ffc107;
 }
-.bg-div{
+.bg-div-p{
   background-color: #24242f;
 }
+.bg-div-foto{
+  background-color: #26262e;
+}
+.bg-div{
+  background-color: #2b2b35;
+}
+
 </style>
