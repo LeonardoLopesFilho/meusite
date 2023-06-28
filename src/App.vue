@@ -2,8 +2,16 @@
   <div class="bg-gray-950 flex justify-center items-center h-screen ">
     <div class="flex flex-row bg-div-p rounded-md ">
       <div>
-        <NomeFoto/>
-        <DadosLeo/>
+        <NomeFoto />
+        <DadosLeo />
+        <Linha />
+        <ProgressCircle />
+        <Linha />
+        <ProgressLine linguagem="HTML" :porcentagem="80"/>
+        <ProgressLine linguagem="CSS" :porcentagem="70"/>
+        <ProgressLine linguagem="VUE" :porcentagem="80"/>
+        <ProgressLine linguagem="PHP" :porcentagem="80"/>
+        <ProgressLine linguagem="WordPress" :porcentagem="85"/>
       </div>
       <div class="text-orange"> Resume</div>
     </div>
@@ -13,13 +21,19 @@
 
 <script>
 import NomeFoto from './components/NomeFoto.vue'
-import DadosLeo from './components/DadosLeo.vue'
+import DadosLeo from '@/components/DadosLeo.vue'
+import Linha from '@/components/Linha.vue'
+import ProgressCircle from './components/ProgressCircle.vue'
+import ProgressLine from '@/components/ProgressLine.vue'
 
 export default {
   name: 'App',
   components: {
     NomeFoto,
-    DadosLeo
+    DadosLeo,
+    Linha,
+    ProgressCircle,
+    ProgressLine
   }
 }
 </script>
@@ -28,17 +42,20 @@ export default {
 .bg-fundo {
   background-color: #313E50;
 }
+
 .text-orange {
   color: #ffc107;
 }
-.bg-div-p{
+
+.bg-div-p {
   background-color: #24242f;
 }
-.bg-div-foto{
+
+.bg-div-foto {
   background-color: #26262e;
 }
-.bg-div{
+
+.bg-div {
   background-color: #2b2b35;
 }
-
 </style>
