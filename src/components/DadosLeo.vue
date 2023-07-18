@@ -5,7 +5,7 @@
             <p class="mb-2">Cidade:</p>
             <p class="mb-2">Idade:</p>
           </div>
-          <div class="pl-16 justify-end text-right text-slate-500 font-medium text-sm">
+          <div class="pl-16 justify-end text-right text-slate-400 font-medium text-sm">
             <p class="mb-2">Brasil</p>
             <p class="mb-2">Curitiba</p>
             <p class="mb-2">21</p>

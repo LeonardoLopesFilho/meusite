@@ -12,10 +12,10 @@ export default {
 
 <style>
     .custom-hr{
-  border-color:  #313E50;
+  border-color:  #101412;
   padding-left: 80%;
   margin-left: 11%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 
 }
 </style>
